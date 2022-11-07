@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:god_life/meeting/meeting_provider.dart';
+import 'package:provider/provider.dart';
 
 import 'home.dart';
 
 void main() async {
   runApp(
-    const MyApp(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (BuildContext context) => MeetingProvider(),
+        ),
+      ],
+      child: const MyApp(),
+    ),
   );
 }
 
