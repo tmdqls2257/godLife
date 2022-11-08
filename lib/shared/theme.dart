@@ -6,6 +6,7 @@ final customW = {
   CustomW.w1: 87.0,
   CustomW.w2: 120.0,
   CustomW.w3: 151.0,
+  CustomW.w4: double.infinity,
 };
 
 enum ColorType { black, orange, white, grey, stroke }

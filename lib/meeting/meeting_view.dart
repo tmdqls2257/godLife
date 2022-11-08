@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:god_life/meeting/meeting_provider.dart';
-import 'package:god_life/meeting/widget/calendar.dart';
 import 'package:god_life/shared/shared.dart';
 import 'package:provider/provider.dart';
 import 'package:table_calendar/table_calendar.dart';
+
+import 'meeting_model.dart';
+import 'widget/event_card.dart';
 
 class Meeting extends StatefulWidget {
   const Meeting({super.key});
@@ -81,6 +83,7 @@ class _MeetingState extends State<Meeting> {
       ),
       body: SingleChildScrollView(
           child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TableCalendar(
             firstDay: meetingProvider.getInitialCalendarDate,
@@ -101,7 +104,14 @@ class _MeetingState extends State<Meeting> {
           Column(
             children: meetingProvider
                 .listOfDayEvents()
-                .map((e) => Text(e.eventTitle))
+                .map(
+                  (myEvents) => Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: EventCard(
+                      myEvents: myEvents,
+                    ),
+                  ),
+                )
                 .toList(),
           ),
         ],
