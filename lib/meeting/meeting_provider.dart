@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:god_life/meeting/widget/calendar.dart';
 import 'package:table_calendar/table_calendar.dart';
+
+import 'meeting_model.dart';
 
 class MeetingProvider extends ChangeNotifier {
   final DateTime todaysDate = DateTime.now();
