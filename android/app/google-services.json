@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "44428255895",
+    "project_id": "godlife-e42a8",
+    "storage_bucket": "godlife-e42a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:44428255895:android:b3b7159b601181bcbd3fd2",
+        "android_client_info": {
+          "package_name": "com.example.god_life"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "44428255895-opndgcu2ep9st4n3jtnebeceqao9kpul.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1oZ-43lvNSYInaEzf9XR4cTRmhHJVY3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44428255895-opndgcu2ep9st4n3jtnebeceqao9kpul.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
